@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JOKENPÔ-MARIO</title>
+</head>
+<body>
+    <audio src="music/04. Main Menu 2.mp3"></audio><!--Music inicio-->
+    <audio src="music/06. Level Complete.mp3" ></audio>  <!--Music Vitoria -->
+    <audio src="music/37. Lose Life.mp3" ></audio><!--Music Derrota-->
+    <audio src="music/Super Mario Bros. 1-Up - QuickSounds.com.mp3" ></audio><!--Acertou!-->
+    <audio src="music/smb_bowserfalls.wav" ></audio><!--Empate!-->
+    <audio src="music/heavy-cineamtic-hit-166888.mp3" ></audio><!--Erro!-->
+
+
+    <header>
+        <span id="play"></span>
+        <p id="PlayerPoints">Pts:</p>
+        <img src="arsset/mario.combate.png"   class="img_Trof_player" alt="img play" />
+        <span>|</span>
+        <img src="arsset/boss.victoria.png"   class="img_Trof_Nemesys" alt="img enemy" />
+        <p id="MachinePoints">Pts:</p>
+        <img src="arsset/mart.png"span id="PlayMachine" style ="height: 30px;width: 30px; border-radius: 25px;" ></span>
+    </header>
+
+
+
+    <main>
+        <div class="box">
+              <div class="contein">
+                <button onclick="OpcaoPlayer('Stone')">
+                    <img src="arsset/rock.png" class="imgGame" style ="height: 30px;" alt="Pedra" />
+                 
+                </button>
+                <p>Pedra</p>
+            </div>
+            <div class="contein">
+                <button onclick="OpcaoPlayer('Paper')">
+                    <img src="arsset/paper.png" class="imgGame" style ="height: 30px;"   alt="Papel" />
+                 
+                </button>
+                <p>Papel</p>
+            </div>
+
+            <div class="contein">
+                <button onclick="OpcaoPlayer('scissors')">
+                    <img src="arsset/tesoura.png" class="imgGame"  style="height: 30px;"  alt="Tesoura" />
+                   
+                </button>
+                <p>Tesoura</p>
+            </div>
+            
+
+
+            </div>
+        </div>  
+     </div>
+    </main>
+
+</body>
+<script src="script.js"></script>
+
+</html>

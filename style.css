@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+:root {
+	--color-cinza: #80887ab6;
+	--color--blue: #040c52bd;
+	--colorpadrão: #5fbad185;
+	--font-padrão: Silkscreen;
+	
+}
+body {
+	background-image: url(arsset/planodefundo.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 3px 20px;
+	font-size: 22px;
+	font-family: var(--font-padrão);
+	background-color: var(--colorpadrão);
+	color: rgb(0, 0, 0);
+	height: 60px;
+}
+#PlayMachine {
+	border-radius: 50px;
+	height: 150px;
+	width: 150px;
+	
+}
+/* persons */
+.img_Trof_player,.img_Trof_Nemesys{
+	height: 30px;
+	height: 50px;
+}
+#play {
+	font-family: var(--font-padrão);
+	color: var(--color--blue);
+	
+}
+.img_Trof_player,
+.img_Trof_Nemesys {
+	border-radius: 50px;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75vh;
+	padding: 50px;
+
+	
+}
+button[type="submit"] {
+	color: white;
+	background-image: url(arsset/cubodeempat-.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 200px;
+	width: 300px;
+	border: none;
+	font-family: var(--font-padrão);
+	cursor: pointer;
+
+}
+.box {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	
+
+}
+.contein{
+
+	display:block;
+	font-size: 22px;
+	font-family: var(--font-padrão);
+	
+	
+}
+.imgGame {
+	display: flex;
+	justify-content: center;
+	margin-left: 50px;
+	height: 200px;
+	transition: 1s ease;
+	opacity: 25%;
+	
+}
+.imgGame:hover {
+	transition: 1s ease;
+	opacity: 100%;
+}
+.imgGame:nth-of-type(1){
+	animation: desen 4s;
+	animation-iteration-count: infinite;
+	padding: 20px;
+}
+@keyframes desen {
+	0% {
+		height: 200px;
+		
+	}
+
+	25% {
+		height: 210px;
+		
+	}
+
+	75% {
+		height:200px;
+		
+	}
+
+	100% {
+		height: 210px;
+		
+	}
+}
+/* enemy card final */
+.imgGame2 {
+	display: flex;
+	justify-content: center;
+	height: 450px;
+	width: 550px;
+	border-radius: 10px;
+}
+/* button renicio */
+#Restart {
+	border-radius: 10px !important;
+	display: flex;
+	align-items: center;
+	font-family: var(--font-padrão);
+	font-size: 40px;
+	height: 80px;
+	width: 250px;
+	color: rgb(0, 0, 0);
+	margin-top: 200px;
+}
+button {
+	background-image: url(arsset/cubodeempat-.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 140px;
+	margin: 45px;
+	height: 150px;
+	width: 150px;
+	cursor: pointer;
+	transition: 5s ease;
+
+}
+button:hover {
+	background-image: url(arsset/mario.happy.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: #12d6b6bd;
+	box-shadow: 3px 2px rgba(0, 0, 0, 0.63);
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 10s ease;
+}
+button>p {
+	font-family: var(--font-padrão);
+	font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+	background-size: auto;
+	}
+	header {
+	
+		padding: 1px 0px;
+		font-size: 15px;
+		height: 50px;
+	}
+	#PlayMachine {
+		border-radius: 50px;
+		height: 75px;
+		width: 75px;
+		
+	}.img_Trof_player,.img_Trof_Nemesys{
+		height: 20px;
+		height: 40px;
+	}
+	main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+	}
+		
+		.imgGame {
+			display: flex;
+			justify-content: center;
+			margin-left: 5px;
+			height: 100px;
+			transition: 1s ease;
+			opacity: 25%;
+			
+		
+	}.box {
+
+		display: flex;
+		flex-direction: column;
+		margin-top: 60px;
+
+
+	
+	}
+	.contein{
+		font-size: 15px;
+	    height: 120px;
+		display: flex;
+		float: 40px;
+		color: red;;
+	}
+	button {
+		background-image: url(arsset/cubodeempat-.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		border: none;
+		border-radius: 10px;
+		height: 50px;
+		width: 50px;
+		
+	
+	}.imgGame {
+		display: flex;
+		flex-direction: column;
+		transition: 1s ease;
+		opacity: 25%;
+		
+	}.imgGame:nth-of-type(1){
+		animation: desen 4s;
+		animation-iteration-count: infinite;
+		padding: 0px;
+	}@keyframes desen {
+		0% {
+			height: 100px;
+			
+		}
+	
+		25% {
+			height: 110px;
+			
+		}
+	
+		75% {
+			height:100px;
+			
+		}
+	
+		100% {
+			height: 110px;
+			
+		}
+	}
+	}.imgGame2 {
+		margin-top: 100px;
+		height: 300px;
+		width: 300px;
+	}
+	/* button renicio */
+	#Restart {
+		font-family: var(--font-padrão);
+		font-size: 40px;
+		height: 80px;
+		width: 250px;
+		color: rgb(0, 0, 0);
+		margin-top: 80px;
+	}
